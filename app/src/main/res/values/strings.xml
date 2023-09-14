@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Generator</string>
+    <string name="sharedPrefName">LocalPref</string>
+    <string name="splash_screen_msg">Generate and manage you password in One Place.</string>
+    <string name="splash_screen_sub_msg">The ultimate app that manage and generate password for you.</string>
+    <string name="pin_remember_text">You must always remember your pin to open this application.</string>
+</resources>

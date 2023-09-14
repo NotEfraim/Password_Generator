@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#999999</color>
+    <color name="violet_1">#7E1BF8</color>
+    <color name="violet_2">#7200EB</color>
+    <color name="yellow">#F4E75A</color>
+    <color name="progressBarBg">#D2C5E2</color>
+    <color name="commonBackground">#F5F5F5</color>
+</resources>

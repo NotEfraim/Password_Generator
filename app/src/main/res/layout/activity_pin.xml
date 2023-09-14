@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/incorrectPinAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Incorrect Pin. Please try again."
+        android:textColor="#FF0000"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pin3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:src="@mipmap/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pinState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="ADD PIN"
+        android:textColor="@color/violet_1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias=".08" />
+
+    <EditText
+        android:id="@+id/pin1"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:maxLength="1"
+        android:inputType="numberPassword"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/pin_background"
+        app:layout_constraintEnd_toStartOf="@+id/pin2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pinState" />
+
+
+    <EditText
+        android:id="@+id/pin2"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:maxLength="1"
+        android:inputType="numberPassword"
+        android:background="@drawable/pin_background"
+        app:layout_constraintEnd_toStartOf="@+id/pin3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pin1"
+        app:layout_constraintTop_toTopOf="@+id/pin1" />
+
+
+    <EditText
+        android:id="@+id/pin3"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:maxLength="1"
+        android:gravity="center"
+        android:inputType="numberPassword"
+        android:background="@drawable/pin_background"
+        app:layout_constraintEnd_toStartOf="@+id/pin4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pin2"
+        app:layout_constraintTop_toTopOf="@+id/pin2" />
+
+
+    <EditText
+        android:id="@+id/pin4"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center"
+        android:maxLength="1"
+        android:inputType="numberPassword"
+        android:background="@drawable/pin_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/pin3"
+        app:layout_constraintTop_toTopOf="@+id/pin3" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/pin_remember_text"
+        android:textColor="@color/grey"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/submitBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pin3"
+        app:layout_constraintVertical_bias=".95"
+        app:layout_constraintWidth_percent=".6" />
+
+
+    <TextView
+        android:id="@+id/submitBtn"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_primary"
+        android:gravity="center"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/pin3"
+        app:layout_constraintVertical_bias=".9"
+        app:layout_constraintWidth_percent=".3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

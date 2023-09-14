@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomTextField">
+        <attr name="showStartIcon" format="boolean"/>
+        <attr name="showEndIcon" format="boolean"/>
+        <attr name="fieldText" format="string"/>
+        <attr name="startIcon" format="reference|integer"/>
+        <attr name="endIcon" format="reference|integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomEditTextField">
+        <attr name="showStartIconEt" format="boolean"/>
+        <attr name="showEndIconEt" format="boolean"/>
+        <attr name="fieldTextEt" format="string"/>
+        <attr name="startIconEt" format="reference"/>
+        <attr name="endIconEt" format="reference"/>
+        <attr name="hintText" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomSpinner">
+        <attr name="spinnerStartIcon" format="reference"/>
+    </declare-styleable>
+
+</resources>
